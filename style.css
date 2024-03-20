@@ -18,6 +18,10 @@ ul {
 li {
     color: white;
 }
+nav {
+    background-color: #020873;
+}
+
 label {
     cursor: pointer;
     display: inline-block;
@@ -89,6 +93,12 @@ dl {
 }
 dt {
     padding-right: 5px;
+    padding-top: 0;
+    margin-top: 0;
+    margin: auto;
+}
+dd {
+    padding-bottom: 5px;
 }
 audio {
     position:absolute;
