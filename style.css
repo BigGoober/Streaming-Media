@@ -21,7 +21,9 @@ li {
 nav {
     background-color: #020873;
 }
-
+#smooth-jazz {
+    background-image: linear-gradient(#020873, black);
+}
 label {
     cursor: pointer;
     display: inline-block;
@@ -105,8 +107,15 @@ audio {
     bottom: 150px;
     left: 5px;
 }
+#playlist-content {
+    background-color: #0D8DFB;
+}
+#curated-content {
+    background-color: #030A8C;
+}
 #trending ::-webkit-scrollbar {
     width: 15px;
+    color:#020659;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
     background-color: #590242;
