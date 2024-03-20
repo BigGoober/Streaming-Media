@@ -7,6 +7,7 @@ html {
 body {
     margin: 0 auto;
     width: 375px;
+    background-color:white;
 }
 ul {
     overflow: hidden;
@@ -101,6 +102,10 @@ audio {
     background-color: #590242;
 }
 @media screen and (min-width:834px) {
+    body {
+        width: 834px;
+        margin: 0 auto;
+    }
     ul {
         overflow: visible;
         position: absolute;
