@@ -6,6 +6,8 @@ html {
 }
 body {
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 375px;
 }
 ul {
@@ -13,6 +15,9 @@ ul {
     max-height: 0;
     transition: max-height .2s ease-out;
     list-style-type: none;
+}
+li {
+    color: white;
 }
 label {
     cursor: pointer;
