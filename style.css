@@ -102,18 +102,16 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
-}
-#scroll-2 section {
-    margin: 10px;
-    position: relative;
-}
-#scroll-2 div {
     position: absolute;
     top: 251px;
     background-color: rgba(255,255,255,.75);
     padding: 5px;
     height: 50px;
     width: 350px;
+}
+#scroll-2 section {
+    margin: 10px;
+    position: relative;
 }
 #scroll-3 {
     display: grid;
