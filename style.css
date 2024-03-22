@@ -23,6 +23,7 @@ nav {
 }
 #smooth-jazz {
     background-image: linear-gradient(90deg,#020873, black);
+    margin-top: 0;
 }
 #smooth-jazz p {
     color: white;
