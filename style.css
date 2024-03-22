@@ -22,9 +22,12 @@ nav {
     background-color: #020873;
 }
 #smooth-jazz {
-    background-image: linear-gradient(#020873, black);
+    background-image: linear-gradient(90deg,#020873, black);
 }
 #smooth-jazz p {
+    color: white;
+}
+#smooth-jazz h2 {
     color: white;
 }
 label {
@@ -92,6 +95,44 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 5px;
     height: 50px;
     width: 350px;
+}
+#scroll-2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-2 section {
+    margin: 10px;
+    position: relative;
+}
+#scroll-2 div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+    background-color: #0D8DFB;
+}
+#scroll-3 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#scroll-3 section {
+    margin: 10px;
+    position: relative;
+}
+#scroll-3 div {
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+    background-color: #030A8C;
 }
 div h2 {
     margin-top: 0;
