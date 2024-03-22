@@ -21,8 +21,11 @@ li {
 nav {
     background-color: #020873;
 }
-#Smooth-jazz {
+#smooth-jazz {
     background-image: linear-gradient(#020873, black);
+}
+#smooth-jazz p {
+    color: white;
 }
 label {
     cursor: pointer;
@@ -89,6 +92,9 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding: 5px;
     height: 50px;
     width: 350px;
+}
+div h2 {
+    margin-top: 0;
 }
 dl {
     display: flex;
