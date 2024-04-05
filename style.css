@@ -14,6 +14,7 @@ ul {
     max-height: 0;
     transition: max-height .2s ease-out;
     list-style-type: none;
+    margin: 0;
 }
 li {
     color: white;
@@ -21,15 +22,23 @@ li {
 nav {
     background-color: #020873;
 }
+main {
+    margin-top: 0;
+    padding-top: 0;
+}
 #smooth-jazz {
     background-image: linear-gradient(90deg,#020873, black);
     margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
 }
 #smooth-jazz p {
     color: white;
 }
 #smooth-jazz h2 {
     color: white;
+    margin: 0;
+    padding: 10px;
 }
 label {
     cursor: pointer;
@@ -102,12 +111,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
-    position: absolute;
-    top: 251px;
-    background-color: rgba(255,255,255,.75);
-    padding: 5px;
-    height: 50px;
-    width: 350px;
+    background-color:#0D8DFB;
 }
 #scroll-2 section {
     margin: 10px;
@@ -118,18 +122,12 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
+    background-color:#030A8C;
 }
 #scroll-3 section {
     margin: 10px;
     position: relative;
-}
-#scroll-3 div {
-    position: absolute;
-    top: 251px;
-    background-color: rgba(255,255,255,.75);
-    padding: 5px;
-    height: 50px;
-    width: 350px;
+    color: white;
 }
 div h2 {
     margin-top: 0;
@@ -180,4 +178,57 @@ audio {
     label span, input {
         display: none;
     }
+    #all-lists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #scroll-2 {
+        grid-template-columns: 1fr;
+        height: 500px;
+        overflow-y: scroll;
+    }
+    #scroll-2 section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #scroll-2 p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 0;
+        padding-top: 55px;
+    }
+    #scroll-2 h2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 80px;
+        width: 220px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    #scroll-3 {
+        grid-template-columns: 1fr;
+        height: 500px;
+        overflow-y: scroll;
+    }
+    #scroll-3 section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    #scroll-3 p {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 0;
+        padding-top: 55px;
+    }
+    #scroll-3 h2 {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 80px;
+        width: 220px;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
 }
+    
