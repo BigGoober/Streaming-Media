@@ -22,9 +22,16 @@ li {
 nav {
     background-color: #020873;
 }
+nav a{
+    color: white;
+}
 main {
     margin-top: 0;
     padding-top: 0;
+}
+h2 {
+    font-variant: small-caps;
+    margin-left: 25px;
 }
 #smooth-jazz {
     background-image: linear-gradient(90deg,#020873, black);
@@ -34,11 +41,13 @@ main {
 }
 #smooth-jazz p {
     color: white;
+    margin-left: 25px;
 }
 #smooth-jazz h2 {
     color: white;
     margin: 0;
-    padding: 10px;
+    margin-left: 25px;
+    padding-top: 10px;
 }
 label {
     cursor: pointer;
@@ -106,16 +115,54 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     height: 50px;
     width: 350px;
 }
+.scroll h2 {
+    margin-left: 0;
+}
+#trending a {
+    display: flex;
+    margin-left: 165px;
+    margin-right: 15px;
+    padding-left: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #590242;
+    color: white;
+}
+#playlists a {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 165px;
+    margin-right: 15px;
+    padding-left: 35px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #590242;
+    color: white;
+}
+#curated a {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 165px;
+    margin-right: 15px;
+    padding-left: 35px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #590242;
+    color: white;
+}
 #scroll-2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     overflow-x: auto;
     overflow-y: hidden;
-    background-color:#0D8DFB;
+    background-color:#2699FB;
 }
 #scroll-2 section {
     margin: 10px;
     position: relative;
+    color: white;
+    background-color:#0D8DBF;
+    padding: 10px;
 }
 #scroll-3 {
     display: grid;
@@ -128,6 +175,8 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     margin: 10px;
     position: relative;
     color: white;
+    background-color: #020873;
+    padding: 10px;
 }
 div h2 {
     margin-top: 0;
@@ -157,7 +206,7 @@ audio {
     background-color: #030A8C;
 }
 #trending ::-webkit-scrollbar {
-    width: 15px;
+    width: 50%;
     color:#020659;
 }
 #trending ::-webkit-scrollbar-thumb:hover {
@@ -168,15 +217,40 @@ audio {
         width: 834px;
         margin: 0 auto;
     }
-    ul {
+    nav ul {
         overflow: visible;
         position: absolute;
-        top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        top: 10px;
+        display: flex;
+    }
+    nav li {
+        margin-left: 28px;
+        margin-right: 28px;
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    nav li:first-child {
+        font-variant: small-caps;
+        padding-right: 30px;
+        margin-left: 0;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    nav li:last-child {
+        padding-top: 0px;
+    }
+    nav a:hover {
+        color: #590242;
     }
     label span, input {
         display: none;
+    }
+    #trending a {
+        margin-left: 500px;
+        padding-left: 100px;
     }
     #all-lists {
         display: grid;
@@ -197,12 +271,13 @@ audio {
         grid-row: 1/2;
         margin-top: 0;
         padding-top: 55px;
+        padding-left: 10px;
     }
     #scroll-2 h2 {
         margin-bottom: 0;
         padding-bottom: 0;
         height: 80px;
-        width: 220px;
+        width: 190px;
         grid-column: 2/3;
         grid-row: 1/2;
     }
@@ -221,6 +296,7 @@ audio {
         grid-row: 1/2;
         margin-top: 0;
         padding-top: 55px;
+        padding-left: 10px;
     }
     #scroll-3 h2 {
         margin-bottom: 0;
