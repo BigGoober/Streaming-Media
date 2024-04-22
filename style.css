@@ -115,7 +115,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     height: 50px;
     width: 350px;
 }
-.scroll h2 {
+.scroll h3 {
     margin-left: 0;
 }
 #trending a {
@@ -178,7 +178,7 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     background-color: #020873;
     padding: 10px;
 }
-div h2 {
+div h3 {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -280,9 +280,9 @@ footer {
         grid-row: 1/2;
         margin-top: 0;
         padding-top: 55px;
-        padding-left: 10px;
+        padding-left: 0px;
     }
-    #scroll-2 h2 {
+    #scroll-2 h3 {
         margin-bottom: 0;
         padding-bottom: 0;
         height: 80px;
@@ -305,16 +305,16 @@ footer {
         grid-row: 1/2;
         margin-top: 0;
         padding-top: 55px;
-        padding-left: 10px;
+        padding-left: 30px;
     }
-    #scroll-3 h2 {
+    #scroll-3 h3 {
         margin-bottom: 0;
         padding-bottom: 0;
         height: 80px;
         width: 220px;
         grid-column: 2/3;
         grid-row: 1/2;
+        padding-left: 30px;
     }
-
 }
     
